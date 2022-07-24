@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    hostname: adminer
+    restart: always
+    depends_on:
+      - mariadb
+      - postgres
+    ports:
+      - 8080:8080
+
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    hostname: mariadb
+    restart: always
+    ports:
+      - 3306:3306
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    hostname: postgres
+    restart: always
+    ports:
+      - 5432:5432
