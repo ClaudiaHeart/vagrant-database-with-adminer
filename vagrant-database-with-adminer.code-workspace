@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "Project",
+      "path": "."
+    },
+    {
+      "name": "docker",
+      "path": "./docker"
+    },
+    {
+      "name": "MariaDB",
+      "path": "./docker/mariadb"
+    },
+    {
+      "name": "PostgreSQL",
+      "path": "./docker/postgres"
+    }
+  ],
+  "settings": {}
+}
