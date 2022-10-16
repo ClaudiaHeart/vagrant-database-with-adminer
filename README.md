@@ -5,7 +5,7 @@ Vagrant Database With Adminer
 
 自分用の検証ツールです。  
 `vagrant up`コマンド一発で`PostgreSQL`と`MariaDB`と`Adminer`を用意できるようにしたものです。  
-データベースと`Adminer`は`docker`で実行しています。  
+全て`docker`で実行しています。  
 
 
 <!-- omit in toc -->
@@ -28,16 +28,17 @@ Vagrant Database With Adminer
 作業環境
 ------------
 - Windows 10 64bit
-- VirtualBox 6.1.34
-- Vagrant 2.2.19
+- VirtualBox 6.1.38
+- Vagrant 2.3.1
 
 
 ツールのバージョン
 ------------
+- ubuntu/focal64 v20220924.0.0
 - docker-compose 3.7
-- Adminer 4.8.1
-- MariaDB 10.8.3
-- PostgreSQL 14.4
+- [adminer](https://hub.docker.com/_/adminer) 4.8.1
+- [mariadb](https://hub.docker.com/_/mariadb) 10.8.3
+- [postgres](https://hub.docker.com/_/postgres) 14.4
 
 
 使い方
@@ -46,12 +47,14 @@ Vagrant Database With Adminer
 ```pwsh
 vagrant up
 ```
+
 ### 設定ファイルの変更
-下記のenvファイルからある程度は変更できる
+下記のenvファイルから環境変数を変更できる
 - [バージョン等の設定](docker\.env)
 - [Adminerの設定](docker\.env.adminer)
 - [MariaDBの設定](docker\.env.mariadb)
 - [PostgreSQLの設定](docker\.env.postgres)
+
 ### データの投入
 下記ディレクトリに`sqlファイル`を置いておけば、`docker`実行時に`SQL`が実行される
 ```
