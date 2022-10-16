@@ -5,15 +5,15 @@
       "path": "."
     },
     {
-      "name": "docker",
+      "name": "docker [Shortcut]",
       "path": "./docker"
     },
     {
-      "name": "MariaDB",
+      "name": "MariaDB [Shortcut]",
       "path": "./docker/mariadb"
     },
     {
-      "name": "PostgreSQL",
+      "name": "PostgreSQL [Shortcut]",
       "path": "./docker/postgres"
     }
   ],
