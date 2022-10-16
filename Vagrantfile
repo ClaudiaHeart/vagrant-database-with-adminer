@@ -23,8 +23,8 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "ubuntu/focal64"
-  config.vm.box_version = "20220924.0.0"
+  config.vm.box = "ubuntu/jammy64"
+  config.vm.box_version = "20221014.0.0"
 
   config.vm.define "vagrant-database-with-adminer"
 
