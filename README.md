@@ -34,7 +34,7 @@ Vagrant Database With Adminer
 
 ツールのバージョン
 ------------
-- ubuntu/focal64 v20220924.0.0
+- ubuntu/focal64 20221219.0.0
 - docker-compose 3.7
 - [adminer](https://hub.docker.com/_/adminer) 4.8.1
 - [mariadb](https://hub.docker.com/_/mariadb) 10.8.3
