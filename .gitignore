@@ -17,4 +17,9 @@
 # Built Visual Studio Code Extensions
 *.vsix
 
-.env
+# dotenv environment variable files
+# .env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local

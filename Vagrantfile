@@ -9,7 +9,7 @@ install_plugin('vagrant-timezone')
 install_plugin('vagrant-docker-compose')
 install_plugin('dotenv')
 
-Dotenv.load
+Dotenv.load('.env.local', '.env')
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
