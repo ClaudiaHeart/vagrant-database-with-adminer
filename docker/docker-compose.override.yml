@@ -3,13 +3,11 @@ version: '3.7'
 services:
   adminer:
     image: "adminer:${ADMINER_VERSION}"
-    container_name: adminer
     env_file:
       - .env.adminer
 
   mariadb:
     image: "mariadb:${MARIADB_VERSION}"
-    container_name: mariadb
     env_file:
       - .env.mariadb
     command: "mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-time-zone=${TIME_ZONE}"
